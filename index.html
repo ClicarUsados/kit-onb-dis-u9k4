@@ -1,0 +1,967 @@
+<!doctype html><html><head><meta charset=utf8>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kit Onboarding Diseño Usados</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: manual de trabajo por pestañas. Encabezados azul Clicar con texto blanco, fondo limpio, acentos por área de negocio. */
+:root{
+  --azul:#323ba7; --verde:#6ae016; --turq:#12d1c1; --mag:#de5bed; --celeste:#1484f4;
+  --bg:#f6f7fb; --card:#ffffff; --fg:#1b1f3a; --muted:#5a5f7d; --line:#dfe2ef; --soft:#eceef8;
+  --azul-ink:#323ba7; --on-azul:#ffffff;
+  --font:"Montserrat","Mont","Gotham",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#13162b; --card:#1c2040; --fg:#eef0fb; --muted:#aab0d0; --line:#2f355c; --soft:#262b50;
+  --azul-ink:#8f96ff; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#13162b; --card:#1c2040; --fg:#eef0fb; --muted:#aab0d0; --line:#2f355c; --soft:#262b50;
+  --azul-ink:#8f96ff; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;margin:0}
+h1,h2,h3,h4{text-wrap:balance;margin:0;line-height:1.2}
+h2{font-size:1.45rem;font-weight:800;color:var(--azul-ink)}
+h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem}
+p{margin:0 0 .6rem}
+b,strong{font-weight:700}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:var(--soft);padding:.05em .35em;border-radius:4px}
+a{color:var(--celeste)}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:0 48px}
+/* Header */
+.top{background:var(--azul);color:var(--on-azul);padding:14px 16px 10px;position:sticky;top:env(safe-area-inset-top,0px);z-index:40}
+.top .in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.top h1{font-size:1.15rem;font-weight:800;letter-spacing:.01em}
+.top .ver{font-size:.75rem;opacity:.85;flex-basis:100%;display:flex;gap:14px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);border-radius:999px;padding:3px 10px;font-weight:600;font-size:.75rem;cursor:pointer;border:0;color:#fff;font-family:inherit}
+.search{flex:1 1 260px;display:flex;gap:6px;position:relative;min-width:0}
+.search input{flex:1;min-width:0;padding:8px 12px;border-radius:8px;border:0;font:inherit;font-size:.9rem}
+.sres{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;max-height:60vh;overflow:auto;box-shadow:0 12px 30px rgba(0,0,0,.25);z-index:50}
+.sres button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:9px 12px;font:inherit;font-size:.85rem;color:var(--fg);cursor:pointer}
+.sres button:hover,.sres button:focus{background:var(--soft);outline:none}
+.sres .t{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--celeste);font-weight:700;display:block}
+.sres .none{padding:12px;color:var(--muted);font-size:.85rem}
+/* Tabs */
+.tabs{display:flex;gap:4px;overflow-x:auto;padding:10px 0;border-bottom:2px solid var(--line);margin-bottom:22px;scrollbar-width:thin}
+.tabs button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 12px;border-radius:8px;font:inherit;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{background:var(--azul);color:#fff;border-color:var(--azul)}
+.tabs button:focus-visible{outline:2px solid var(--verde);outline-offset:2px}
+.tabs .n{opacity:.6;margin-right:4px}
+.panel{display:none}.panel.on{display:block}
+.lead{font-size:1.02rem;max-width:68ch;color:var(--fg)}
+.sec{margin-top:26px}
+.sec>h2{margin-bottom:10px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}
+.card.az{border-top:4px solid var(--azul)} .card.tq{border-top:4px solid var(--turq)} .card.vd{border-top:4px solid var(--verde)} .card.mg{border-top:4px solid var(--mag)}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2px 8px;background:var(--soft);color:var(--azul-ink)}
+.tag.tq{background:var(--turq);color:#102a2a}.tag.vd{background:var(--verde);color:#10290a}.tag.mg{background:var(--mag);color:#2a0a2a}.tag.cl{background:var(--celeste);color:#fff}
+.note{border-left:4px solid var(--verde);background:var(--soft);padding:10px 14px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.92rem}
+.note.warn{border-left-color:var(--mag)}
+.hl{outline:3px solid var(--verde);outline-offset:3px;transition:outline-color 1.2s}
+/* Tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:560px}
+th{background:var(--azul);color:#fff;text-align:left;padding:10px 12px;font-weight:700;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+th.sort{cursor:pointer;user-select:none}th.sort::after{content:" ↕";opacity:.6}th.sort.asc::after{content:" ↑"}th.sort.desc::after{content:" ↓"}
+td{padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:color-mix(in srgb,var(--soft) 45%,transparent)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+.tools input,.tools select{padding:8px 12px;border:1px solid var(--line);border-radius:8px;font:inherit;font-size:.9rem;background:var(--card);color:var(--fg);min-width:0}
+.tools input{flex:1 1 220px}
+.count{font-size:.8rem;font-weight:700;color:var(--azul-ink);font-variant-numeric:tabular-nums}
+/* Accordions */
+details{border:1px solid var(--line);border-radius:10px;background:var(--card);margin-bottom:8px}
+summary{cursor:pointer;padding:12px 14px;font-weight:700;list-style:none;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+summary::before{content:"+";font-weight:800;color:var(--azul-ink);width:14px}
+details[open] summary::before{content:"–"}
+details .body{padding:0 14px 14px;font-size:.92rem}
+/* Bars */
+.bars{display:grid;gap:7px}
+.bar{display:grid;grid-template-columns:minmax(120px,170px) 1fr 52px;gap:10px;align-items:center;font-size:.85rem}
+.bar .lab{text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar .tr{background:var(--soft);border-radius:6px;height:20px;overflow:hidden}
+.bar .fl{height:100%;background:var(--turq);border-radius:6px}
+.bar.cn .fl{background:var(--azul)}
+.bar .v{font-variant-numeric:tabular-nums;font-weight:700}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0 16px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.kpi b{display:block;font-size:1.5rem;color:var(--azul-ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.kpi span{font-size:.78rem;color:var(--muted)}
+/* Fears */
+.fears{display:grid;gap:10px;counter-reset:f}
+.fear{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.fear .num{font-size:1.8rem;font-weight:800;color:var(--azul-ink);line-height:1}
+.fear.dom{border:2px solid var(--azul)}
+/* Rules */
+.rules{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:6px;min-width:0}
+.rule .rn{font-size:.72rem;font-weight:800;color:var(--muted);letter-spacing:.06em}
+.rule .rt{font-weight:800;font-size:1rem;color:var(--azul-ink)}
+.rule .why{font-size:.88rem;border-top:1px dashed var(--line);padding-top:6px}
+.rule .why b{color:var(--azul-ink)}
+.sw{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:4px;border:1px solid rgba(0,0,0,.15)}
+.pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.pal div{border-radius:8px;padding:10px;font-size:.78rem;font-weight:700;border:1px solid var(--line)}
+/* Flow */
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:12px 0}
+.fn{flex:1 1 150px;background:var(--card);border:2px solid var(--azul);border-radius:10px;padding:10px 12px;font-size:.85rem;position:relative;min-width:0}
+.fn b{display:block;color:var(--azul-ink)}
+.fn.me{border-color:var(--verde);background:color-mix(in srgb,var(--verde) 14%,var(--card))}
+.fn.vb{border-style:dashed}
+.fa{align-self:center;font-size:1.3rem;color:var(--azul-ink);font-weight:800;padding:0 2px}
+/* Checklist */
+.prog{height:12px;background:var(--soft);border-radius:999px;overflow:hidden;margin:6px 0 14px}
+.prog div{height:100%;background:var(--verde);width:0;transition:width .3s}
+.ck{display:grid;gap:6px}
+.ck label{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;font-size:.92rem}
+.ck input{margin-top:3px;accent-color:var(--azul);width:18px;height:18px;flex:0 0 auto}
+.ck input:checked+span{text-decoration:line-through;color:var(--muted)}
+/* Deck */
+.deckbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.btn{background:var(--azul);color:#fff;border:0;border-radius:8px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer}
+.btn.sec2{background:var(--soft);color:var(--azul-ink)}
+.deck{background:var(--azul);color:#fff;border-radius:14px;aspect-ratio:16/9;max-width:100%;position:relative;overflow:hidden;display:grid}
+.deck.fs{position:fixed;inset:0;aspect-ratio:auto;border-radius:0;z-index:100;padding-top:env(safe-area-inset-top,0px)}
+.slide{display:none;padding:clamp(18px,4vw,48px);grid-template-rows:auto 1fr auto;gap:12px;min-height:0}
+.slide.on{display:grid}
+.slide .eb{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;opacity:.8;font-weight:700}
+.slide h2{color:#fff;font-size:clamp(1.3rem,3.2vw,2.3rem);margin-top:4px}
+.slide .bd{font-size:clamp(.9rem,1.7vw,1.15rem);overflow:auto;min-height:0;line-height:1.45}
+.slide .bd ul{margin:.3em 0;padding-left:1.2em}
+.slide .bd li{margin:.25em 0}
+.slide .q{font-size:clamp(.72rem,1.3vw,.9rem);border-top:1px solid rgba(255,255,255,.35);padding-top:8px;opacity:.92}
+.slide .q b{color:var(--verde)}
+.slide .big{font-size:clamp(2.2rem,6vw,4.5rem);font-weight:800;line-height:1;color:var(--verde)}
+.slide .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px 18px}
+.slide .box{background:rgba(255,255,255,.12);border-radius:10px;padding:10px 12px}
+.slide .box b{color:var(--turq)}
+.dnav{position:absolute;right:14px;bottom:10px;display:flex;gap:6px;align-items:center;font-size:.75rem;font-variant-numeric:tabular-nums}
+.dnav button{background:rgba(255,255,255,.18);color:#fff;border:0;border-radius:6px;padding:4px 10px;font:inherit;cursor:pointer}
+.ml{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+.ml div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.ml b{display:block;color:var(--azul-ink);font-size:1.1rem}
+.ml span{font-size:.72rem;color:var(--muted)}
+.small{font-size:.8rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="top">
+  <div class="in">
+    <h1>Kit Onboarding · Diseño Usados Americar</h1>
+    <div class="search">
+      <input id="gsearch" type="search" placeholder="Buscar en todo el manual: regla, sigla, formato, dimensión…" autocomplete="off" aria-label="Buscador global">
+      <div id="gres" class="sres" hidden></div>
+    </div>
+    <div class="ver">
+      <span>Versión 1.2 · 05-oct-2026</span>
+      <span>Stock medido al 04-oct-2026 · 1.920 autos publicados</span>
+      <span>Fuentes: Brandbooks Clicar, Salazar Israel y Portillo · medición propia de stock</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<nav class="tabs" role="tablist" id="tabs">
+  <button role="tab" data-tab="t1"><span class="n">1</span>Dónde estás parada</button>
+  <button role="tab" data-tab="t2"><span class="n">2</span>Diccionario</button>
+  <button role="tab" data-tab="t3"><span class="n">3</span>Qué vendemos</button>
+  <button role="tab" data-tab="t4"><span class="n">4</span>A quién le hablamos</button>
+  <button role="tab" data-tab="t5"><span class="n">5</span>Canales y soportes</button>
+  <button role="tab" data-tab="t6"><span class="n">6</span>Reglas duras + Marca</button>
+  <button role="tab" data-tab="t7"><span class="n">7</span>Jefatura y aprobación</button>
+  <button role="tab" data-tab="t8"><span class="n">8</span>Tu primera semana</button>
+  <button role="tab" data-tab="t9"><span class="n">9</span>Deck Día 1</button>
+</nav>
+
+<!-- ================= TAB 1 ================= -->
+<section class="panel" id="t1" data-tabname="1 · Dónde estás parada">
+  <h2>Dónde estás parada</h2>
+  <p class="lead">Americar es un holding automotriz chileno dueño de los 5 concesionarios más grandes de Chile. Tú entras al equipo de <b>Marketing de Usados</b>, que atiende la vertical de autos usados de esos 5 concesionarios.</p>
+
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card az" data-s>
+      <span class="tag">Concepto base</span>
+      <h3>Qué es un concesionario y qué es un CES</h3>
+      <p>Un <b>concesionario</b> es la empresa que vende autos al público, con sucursales físicas, vendedores y stock propio. En Americar, en la jerga interna, a cada concesionario se le dice <b>CES</b> (plural: "los CES"). Cuando escuches "esta pieza va para los 5 CES", significa una pieza por cada concesionario.</p>
+    </div>
+    <div class="card vd" data-s>
+      <span class="tag vd">Alcance</span>
+      <h3>Trabajas SOLO en Usados</h3>
+      <p>Cada CES (menos Clicar) vende también autos nuevos. <b>Nuevos es otro equipo, otro presupuesto y otro KV.</b> Si te llega una pieza de autos nuevos, no es tuya: deriva a Beto. Lo único que tomas de Nuevos es el KV troncal del mes (ver pestaña 6).</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>Los 5 CES</h2>
+    <div class="tw"><table data-s>
+      <thead><tr><th>CES</th><th>Negocio</th><th>Dominio usados</th><th>Pauta</th><th>Orgánico</th></tr></thead>
+      <tbody>
+        <tr><td><b>Clicar</b></td><td>Solo usados (venta + compra)</td><td>clicar.cl</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td><b>Salazar Israel</b> (SAIS)</td><td>Nuevos + usados</td><td>salazarisrael.cl/usados</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td><b>Portillo</b></td><td>Nuevos + usados</td><td>portillo.cl/usados</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td><b>Coseche</b></td><td>Nuevos + usados</td><td>coseche.com/usados</td><td>Sí</td><td>No</td></tr>
+        <tr><td><b>Servimaq</b></td><td>Nuevos + usados (reactivado)</td><td>servimaq.cl/usados</td><td>Sí</td><td>No</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note" data-s><b>Alcance por canal, sin ambigüedad:</b> la <b>pauta</b> (Meta y Google) cubre los 5 CES. El <b>orgánico</b> (Instagram, TikTok, YouTube Shorts) cubre solo 3: Clicar, Salazar Israel y Portillo. Coseche y Servimaq no tienen producción orgánica de Usados.</div>
+  </div>
+
+  <div class="sec">
+    <h2>Los dos motores del negocio</h2>
+    <p class="lead">Nunca se confunden. Tienen color, mensaje y público distintos.</p>
+    <div class="grid g2">
+      <div class="card tq" data-s>
+        <span class="tag tq">Venta · B2C</span>
+        <h3>Vender autos al público</h3>
+        <p>Aplica a los <b>5 CES</b>. El cliente es una persona que quiere comprar un auto usado. Color de área: turquesa.</p>
+      </div>
+      <div class="card vd" data-s>
+        <span class="tag vd">Compra / Tasación · C2B</span>
+        <h3>Captar autos para el stock</h3>
+        <p><b>Solo CLICAR.</b> El cliente es una persona que quiere vender su auto; nosotros lo compramos para alimentar el stock. Color de área: verde. Mensajería sin bonos ni incentivos: velocidad, simplicidad, transparencia. <b>En Compra no se prometen montos.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TAB 2 ================= -->
+<section class="panel" id="t2" data-tabname="2 · Diccionario">
+  <h2>Diccionario</h2>
+  <p class="lead">Sin esto no entiendes ninguna reunión. Escribe cualquier sigla y aparece al tiro.</p>
+  <div class="tools">
+    <input id="dicq" type="search" placeholder="Filtrar: CPL, BOFU, zona segura, Temuco…" aria-label="Filtrar diccionario">
+    <span class="count" id="diccount"></span>
+  </div>
+  <div class="tw"><table id="dict">
+    <thead><tr><th>Sigla / término</th><th>Qué significa</th><th>Por qué te importa a ti</th></tr></thead>
+    <tbody>
+      <tr data-s><td><b>CES</b></td><td>Concesionario. Cada una de las 5 empresas del holding que venden autos.</td><td>Casi todo brief dice para qué CES es la pieza. Cambia logo, dominio y atributo.</td></tr>
+      <tr data-s><td><b>KV</b></td><td>Key Visual: la imagen/concepto troncal de la campaña del mes. Baja desde Nuevos ya aprobado.</td><td>Es tu punto de partida obligatorio cada mes. No se toca ni se compite con él.</td></tr>
+      <tr data-s><td><b>TOFU</b></td><td>Top of Funnel: etapa de atracción/alcance. El cliente recién mira.</td><td>Pieza más aspiracional, 1 versión, headline del banco TOFU.</td></tr>
+      <tr data-s><td><b>MOFU</b></td><td>Middle of Funnel: consideración. El cliente compara.</td><td>Pieza con foco en la prueba (ficha, fotos reales, inspección). 1 versión.</td></tr>
+      <tr data-s><td><b>BOFU</b></td><td>Bottom of Funnel: conversión. El cliente cotiza.</td><td>La etapa con más trabajo: 2 versiones (A/B en Meta; sin texto/con texto en PMax).</td></tr>
+      <tr data-s><td><b>AON</b></td><td>Always On: campaña permanente que comunica atributos del CES que restan fricción. Sin precio ni bono.</td><td>El gancho es el atributo (garantía, inspección, respaldo), no una oferta.</td></tr>
+      <tr data-s><td><b>Táctica</b></td><td>Campaña con gancho comercial: precio, bono, cuotas. CTA orientado a cotización.</td><td>El gancho comercial va verbatim en la pieza. Suele llevar legal más largo.</td></tr>
+      <tr data-s><td><b>CPL</b></td><td>Costo por Lead: cuánto cuesta en pauta que una persona deje sus datos.</td><td>Una pieza que no se entiende sube el CPL. Es como se mide si tu creativo funciona en TOFU/MOFU.</td></tr>
+      <tr data-s><td><b>CPV</b></td><td>Costo por Venta: pauta invertida dividida por autos vendidos.</td><td>Es el número que mira gerencia. Tus piezas BOFU influyen directo.</td></tr>
+      <tr data-s><td><b>TC</b></td><td>Tasa de cierre: leads que terminan en venta.</td><td>Si la pieza promete algo que la sucursal no cumple, entran leads que no cierran y baja la TC.</td></tr>
+      <tr data-s><td><b>B2C</b></td><td>Business to Consumer: la empresa le vende al público. Es la vertical Venta.</td><td>Aplica a los 5 CES. Color turquesa.</td></tr>
+      <tr data-s><td><b>C2B</b></td><td>Consumer to Business: el público le vende a la empresa. Es la vertical Compra/Tasación.</td><td>Solo Clicar. Color verde. Sin prometer montos.</td></tr>
+      <tr data-s><td><b>PMax</b></td><td>Performance Max: tipo de campaña de Google Ads que combina Search, Display, YouTube y Discover con creativos que Google mezcla solo.</td><td>Solo BOFU/Conversiones. Hasta 20 imágenes, 2 versiones: sin texto y con texto.</td></tr>
+      <tr data-s><td><b>CT</b></td><td>Segmento que aparece en los nombres de campaña: <code>Salazar_Usados_Conversiones_CT_Mayo_2026_C6</code> y <code>Clicar|Meta|VentaUsados|Conv|ZonaSur|CT|Advantage|13052026|C6</code>.</td><td>Lo vas a ver en todo nombre de campaña. Consultar a Beto qué codifica.</td></tr>
+      <tr data-s><td><b>Paula IA</b></td><td>Asistente de inteligencia artificial que atiende el canal de WhatsApp.</td><td>Las piezas con CTA a WhatsApp llegan a Paula IA, no a un vendedor. El mensaje debe ser claro para que la conversación arranque bien.</td></tr>
+      <tr data-s><td><b>Insider</b></td><td>Plataforma de mailing, web push, popups y sliders de los sitios.</td><td>Si una pieza va a mail/popup/slider, el formato lo define Insider. Pide la medida a Beto.</td></tr>
+      <tr data-s><td><b>Contentful</b></td><td>CMS (gestor de contenidos) de los 5 sitios web.</td><td>Banners y componentes web se cargan ahí. Tú entregas la pieza; no la subes.</td></tr>
+      <tr data-s><td><b>Metrix</b></td><td>Agencia externa de performance que opera parte de la pauta (Google Ads).</td><td>Pueden pedir ajustes de creativo vía Beto. Nunca te llegan pedidos directos de ellos.</td></tr>
+      <tr data-s><td><b>Pulso</b></td><td>Plataforma interna de reportería del holding, en <code>pulso.americar.com</code>. Requiere sesión y cuenta corporativa. Ahí vive la data de cierre digital, ventas y leads.</td><td>Es de donde salen los números que justifican o descartan un creativo. No necesita acceso para diseñar, pero cuando en la Daily digan "según Pulso", viene de ahí.</td></tr>
+      <tr data-s><td><b>Lead</b></td><td>Persona que dejó sus datos (formulario, WhatsApp, cotización). Cae en el CRM Llaima y lo toma un asesor.</td><td>Toda pieza de pauta existe para generar leads. El CTA tiene que decir qué pasa al hacer clic.</td></tr>
+      <tr data-s><td><b>Verbatim</b></td><td>"Tal cual, palabra por palabra".</td><td>El gancho comercial del brief va verbatim: no lo reescribes ni lo "mejoras". Headline y CTA sí se adaptan por etapa.</td></tr>
+      <tr data-s><td><b>Zona segura</b></td><td>Área de un Story/Reel 9:16 donde la interfaz de Instagram/TikTok no tapa el contenido: texto entre y=250 e y=1670 px (en un lienzo 1080×1920).</td><td>Todo texto y logo dentro de ese rango. Fuera de ahí, se tapa.</td></tr>
+      <tr data-s><td><b>Zonas comerciales (6)</b></td><td>Las agrupaciones geográficas con que se segmenta la pauta: <b>RM · Longitudinal (Talca, Chillán, Linares) · Concepción · Sur · Temuco · Valdivia.</b></td><td>Un brief puede pedir una pieza "para zona Sur". La foto, la ciudad y el contexto tienen que calzar con esa zona.</td></tr>
+      <tr data-s><td><b>RM</b></td><td>Zona comercial Región Metropolitana (Santiago).</td><td>La zona con más sucursales y más pauta. Contexto urbano.</td></tr>
+      <tr data-s><td><b>Longitudinal</b></td><td>Zona comercial que agrupa <b>Talca, Chillán y Linares.</b></td><td>Ciudades intermedias del valle central. Contexto urbano de ciudad media, no capitalino ni rural.</td></tr>
+      <tr data-s><td><b>Concepción</b></td><td>Zona comercial del Gran Concepción.</td><td>Sede del equipo de Usados. Contexto urbano-costero.</td></tr>
+      <tr data-s><td><b>Sur</b></td><td>Zona comercial sur. Servimaq opera en la Región de Los Lagos.</td><td>Pickups, 4x4 y comerciales pesan más. Contexto rural/trabajo.</td></tr>
+      <tr data-s><td><b>Temuco</b></td><td>Zona comercial de Temuco y alrededores.</td><td>Mezcla de SUV familiar y camioneta de trabajo.</td></tr>
+      <tr data-s><td><b>Valdivia</b></td><td>Zona comercial de Valdivia.</td><td>Hasta aquí llega la cobertura de venta de Clicar (Región 5 a Región 14).</td></tr>
+      <tr data-s><td><b>Llaima</b></td><td>CRM del grupo donde caen todos los leads.</td><td>Después de Llaima el lead es de Lead Management; tu trabajo termina en que la persona haga clic.</td></tr>
+      <tr data-s><td><b>VVP</b></td><td>Vehículos en Parte de Pago: autos que Nuevos recibe en parte de pago y pasan al stock de Clicar.</td><td>No se comunica VVP en campaña de Compra. Si te lo piden, consulta a Beto.</td></tr>
+      <tr data-s><td><b>FF.VV.</b></td><td>Fuerza de ventas: los vendedores de sucursal.</td><td>Material para FF.VV. (POP, cubrepatentes, banderas) siempre va en 1 versión.</td></tr>
+      <tr data-s><td><b>Semi Nuevos</b></td><td>Autos con poco uso. Término obligatorio.</td><td>Nunca "casi nuevos". Y nunca "Vehículos": siempre "Autos".</td></tr>
+      <tr data-s><td><b>VB</b></td><td>Visto bueno: la aprobación formal de una pieza.</td><td>Una pieza sin VB no existe. Hay tres VB en cadena: Beto (técnico) → Kelvin → Iván (gerencia).</td></tr>
+      <tr data-s><td><b>Daily</b></td><td>Reunión diaria del equipo de Usados, todos los días a las 9:30.</td><td>Obligatoria. Ahí se fijan las prioridades del día.</td></tr>
+      <tr data-s><td><b>Brief</b></td><td>Documento con que se pide una pieza. Trae contexto, headline, gancho, CTA, vocabulario, sugerencias de diseño y legal.</td><td>Es su insumo de trabajo. Si un campo dice PENDIENTE, se le pide a Beto; no se inventa.</td></tr>
+      <tr data-s><td><b>Brandbook</b></td><td>Manual oficial de marca de cada CES: colores, tipografías, logo, usos permitidos y prohibidos.</td><td>Es la fuente de verdad de marca. Ante contradicción con cualquier otro documento, manda el Brandbook.</td></tr>
+      <tr data-s><td><b>KV troncal</b></td><td>El Key Visual del mes, aprobado, que baja desde Nuevos y gobierna toda la comunicación del período.</td><td>Punto de partida obligatorio. Las piezas se cuelgan de él; no compiten con él.</td></tr>
+      <tr data-s><td><b>Gancho comercial</b></td><td>La frase de oferta aprobada: precio, bono, cuotas, plazo.</td><td>Va <b>verbatim</b>: ni una palabra cambiada. Tiene respaldo legal; modificarlo puede ser publicidad engañosa.</td></tr>
+      <tr data-s><td><b>Headline</b></td><td>El titular de la pieza.</td><td>Se modela según la etapa (TOFU / MOFU / BOFU) desde el banco de textos del brief. Sí se puede adaptar, al contrario del gancho.</td></tr>
+      <tr data-s><td><b>CTA</b></td><td>Call to action: la frase que pide la acción ("Cotiza", "Explora el catálogo").</td><td>También se modela por etapa. En BOFU, en Meta, las versiones A y B llevan CTA muy distintos entre sí.</td></tr>
+      <tr data-s><td><b>Auto héroe</b></td><td>El auto que protagoniza la pieza cuando el brief no fija un modelo concreto.</td><td>Cada CES tiene su auto héroe por etapa (ver pestaña 3). Si duda, parte del modelo más frecuente de su categoría (pestaña 3).</td></tr>
+      <tr data-s><td><b>Guardarraíles</b></td><td>Los límites explícitos del brief: qué no se puede decir, mostrar ni prometer.</td><td>Van en el bloque de Vocabulario del brief. Es lo primero que se revisa antes de entregar.</td></tr>
+      <tr data-s><td><b>Cenefa</b></td><td>La franja de color característica de una marca, aplicada como borde o faja en la pieza.</td><td>SAIS usa franja tricolor turquesa-magenta-amarillo; Portillo, franja celeste-naranjo. Es un identificador de marca: no se improvisa su grosor ni su orden de colores.</td></tr>
+      <tr data-s><td><b>POP</b></td><td>Point of Purchase: material físico de sucursal: pendones, cubrepatentes, banderas, habladores, cartelería.</td><td>Se diseña aparte de lo digital y <b>siempre en 1 versión</b>. Cambian las medidas y el modo de color: Medidas y perfil de color: consultar a Beto por cada pieza.</td></tr>
+      <tr data-s><td><b>Carrusel</b></td><td>Formato de Meta con varias imágenes deslizables en una misma publicación.</td><td>Cada tarjeta es un archivo independiente pero tienen que leerse como una secuencia. Consultar a Beto antes de armar uno.</td></tr>
+      <tr data-s><td><b>Catálogo / DPA</b></td><td>Campaña de Meta que arma el anuncio solo, tomando foto, modelo y precio del feed de stock.</td><td>Ella no diseña cada auto: diseña el <b>marco y el overlay</b> que Meta aplica sobre la foto del feed. El texto tiene que funcionar con cualquier auto que caiga ahí.</td></tr>
+      <tr data-s><td><b>Feed de stock</b></td><td>El archivo de datos que alimenta las campañas de catálogo con los autos publicados.</td><td>Explica por qué una pieza de catálogo no puede tener texto pegado al auto: el auto cambia solo.</td></tr>
+      <tr data-s><td><b>Lead Ads</b></td><td>Formato de Meta donde el formulario se abre dentro de la app, sin salir a la web.</td><td>El CTA debe anticipar que se abre un formulario, no una página de autos.</td></tr>
+      <tr data-s><td><b>Remarketing</b></td><td>Pauta dirigida a quien ya visitó el sitio o vio un auto.</td><td>Público que ya conoce la marca: la pieza puede ir más directa al cierre y saltarse la presentación.</td></tr>
+      <tr data-s><td><b>Advantage</b></td><td>Conjunto de automatizaciones de Meta (Advantage+) que recorta, reencuadra y reordena los creativos solo.</td><td>Por eso la zona segura importa tanto: Meta puede recortar la pieza sin avisar. Nada crítico en los bordes.</td></tr>
+      <tr data-s><td><b>Fatiga de creativo</b></td><td>El desgaste de una pieza: la gente la vio demasiadas veces, el CTR cae y la frecuencia sube.</td><td>Es la razón real por la que le van a pedir variantes de algo que "ya estaba aprobado". No es que la pieza esté mala: está gastada.</td></tr>
+      <tr data-s><td><b>CTR</b></td><td>Click Through Rate: % de personas que vieron la pieza y hicieron clic.</td><td>Es la métrica más directa de si su creativo funciona. Si el CTR cae tres días seguidos, hay fatiga.</td></tr>
+      <tr data-s><td><b>Frecuencia</b></td><td>Cuántas veces en promedio la misma persona vio la pieza.</td><td>Frecuencia alta + CTR cayendo = hay que renovar creativo.</td></tr>
+      <tr data-s><td><b>Retención a 3s</b></td><td>% de personas que siguen viendo el video después de los primeros 3 segundos.</td><td>El diagnóstico más honesto de un video antes de que haya leads. Los primeros 3 segundos deciden todo: el auto o el gancho van al principio, no al final.</td></tr>
+      <tr data-s><td><b>Guardados y compartidos</b></td><td>Las veces que alguien guarda o comparte una publicación orgánica.</td><td>En compra de auto valen <b>más que los likes</b>: guardar es intención real de compra; el like es ruido. Es con lo que se mide su contenido orgánico.</td></tr>
+      <tr data-s><td><b>Nomenclatura de campaña</b></td><td>El formato con que se nombra cada campaña. Meta: <code>CES_Producto_Objetivo_Mes_Año_C6</code>. Google: <code>CES | Usados | Objetivo | Tipo | Segmento | C6</code>.</td><td>Leer el nombre de la campaña le dice para qué CES, qué etapa y qué objetivo es la pieza, sin preguntar.</td></tr>
+      <tr data-s><td><b>C6</b></td><td>Sufijo que cierra los nombres de campaña, tanto en Meta como en Google.</td><td>Sufijo estándar de la nomenclatura. Consultar a Beto qué codifica.</td></tr>
+      <tr data-s><td><b>Tasación</b></td><td>La valorización del auto que un cliente quiere vender.</td><td>Es el corazón de la vertical Compra, solo Clicar, color verde. Mensaje: gratis, rápida, sin trámites. <b>Nunca prometer montos.</b></td></tr>
+      <tr data-s><td><b>Parte de pago</b></td><td>Entregar el auto usado como abono para comprar otro.</td><td>Es un atributo AON de Portillo y Clicar. No confundir con Compra/Tasación: acá el cliente además compra.</td></tr>
+      <tr data-s><td><b>Mock-up</b></td><td>La pieza mostrada dentro del dispositivo o soporte donde va a vivir (celular, feed, pendón).</td><td>Es como se presenta para VB: sobre un mock-up se ve si el texto queda tapado por la interfaz o si el logo se pierde.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ================= TAB 3 ================= -->
+<section class="panel" id="t3" data-tabname="3 · Qué vendemos">
+  <h2>Qué vendemos</h2>
+  <div class="note" data-s><b>El stock es nacional y compartido entre los CES.</b> Consecuencia directa para ti: <b>una pieza de un vehículo sirve para varias marcas; se cambia el logo, el dominio y el atributo, no la foto.</b> Diseña pensando en reutilizar: deja logo, dominio y legal en capas separadas.</div>
+
+  <div class="kpis" data-s>
+    <div class="kpi"><b>1.920</b><span>autos publicados</span></div>
+    <div class="kpi"><b>45</b><span>marcas</span></div>
+    <div class="kpi"><b>51,4%</b><span>del stock son SUV</span></div>
+    <div class="kpi"><b>$13.490.000</b><span>precio mediano de un SUV</span></div>
+  </div>
+  <p class="small" data-s>Stock publicado en los sitios al 04-oct-2026. Los precios son los publicados, no los de cierre; úsalos como referencia de rango, no para prometer disponibilidad.</p>
+
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card az" data-s>
+      <h3>Participación por categoría</h3>
+      <p class="small">La categoría del auto decide la foto, el encuadre y el contexto de la pieza.</p>
+      <div class="bars" id="catBars"></div>
+    </div>
+    <div class="card az" data-s>
+      <h3>Precio por categoría</h3>
+      <div class="tw" style="border:0"><table style="min-width:420px">
+        <thead><tr><th>Categoría</th><th>Autos</th><th>%</th><th>Mediana</th><th>Rango</th></tr></thead>
+        <tbody>
+          <tr><td><b>SUV</b></td><td>986</td><td>51,4%</td><td>$13.490.000</td><td>$5.490.000 – $64.790.000</td></tr>
+          <tr><td><b>Camioneta</b></td><td>304</td><td>15,8%</td><td>$23.440.000</td><td>$4.990.000 – $73.490.000</td></tr>
+          <tr><td><b>Station Wagon</b></td><td>289</td><td>15,1%</td><td>$15.390.000</td><td>$6.690.000 – $55.990.000</td></tr>
+          <tr><td><b>Automóvil</b></td><td>264</td><td>13,8%</td><td>$9.190.000</td><td>$4.790.000 – $32.990.000</td></tr>
+          <tr><td><b>Hatchback</b></td><td>63</td><td>3,3%</td><td>$8.290.000</td><td>$4.990.000 – $21.290.000</td></tr>
+          <tr><td><b>Furgón</b></td><td>12</td><td>0,6%</td><td>$13.490.000</td><td>$7.290.000 – $30.990.000</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>Modelos más frecuentes por categoría</h2>
+    <p class="lead">Así eliges la foto: primero la categoría, después el modelo con más stock dentro de ella.</p>
+    <div class="tw"><table data-s>
+      <thead><tr><th>Categoría</th><th>Top 3 modelos en stock</th></tr></thead>
+      <tbody>
+        <tr><td><b>SUV</b></td><td>MG ZS (56) · Peugeot 3008 (54) · Toyota RAV4 (40)</td></tr>
+        <tr><td><b>Camioneta</b></td><td>Ford Ranger (59) · Chevrolet Silverado (31) · Great Wall Poer (21)</td></tr>
+        <tr><td><b>Station Wagon</b></td><td>Peugeot 3008 (30) · Chevrolet Tracker (21) · Kia Sonet (15)</td></tr>
+        <tr><td><b>Automóvil</b></td><td>Peugeot 208 (18) · MG 3 (14) · Hyundai Accent (13)</td></tr>
+        <tr><td><b>Hatchback</b></td><td>Kia Morning (7) · Peugeot 208 (7) · MG 3 (6)</td></tr>
+        <tr><td><b>Furgón</b></td><td>Peugeot Partner (4) · Ford Transit (2) · Opel Combo (1)</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note" data-s><b>Las marcas chinas están repartidas en todas las categorías</b>, entre 17% y 25% según categoría (MG, Chery, JAC, Haval, Great Wall, Changan, Geely). No son un segmento aparte: son una quinta parte de casi cualquier categoría. Se fotografían y se presentan igual de serias que cualquier otra marca.</div>
+  </div>
+
+  <div class="sec">
+    <h2>Qué implica cada categoría para el diseño</h2>
+    <details data-s><summary>SUV <span class="tag">986 autos · 51,4% · mediana $13.490.000</span></summary><div class="body"><p>Es la mitad de la vitrina: la mayoría de tus piezas van a llevar un SUV. Público amplio, familiar y urbano. Encuadre tres cuartos, auto completo, contexto de ciudad o barrio. Modelos de referencia: MG ZS, Peugeot 3008, Toyota RAV4.</p></div></details>
+    <details data-s><summary>Camioneta <span class="tag">304 autos · 15,8% · mediana $23.440.000</span></summary><div class="body"><p>La categoría más cara del stock. Contexto de trabajo real (obra, campo, carga), nunca showroom. El encuadre bajo y frontal le da presencia. Modelos de referencia: Ford Ranger, Chevrolet Silverado, Great Wall Poer.</p></div></details>
+    <details data-s><summary>Station Wagon <span class="tag">289 autos · 15,1% · mediana $15.390.000</span></summary><div class="body"><p>Categoría intermedia entre SUV y automóvil, con varios modelos que también aparecen como SUV (el 3008, el Tracker). Si el brief no especifica, trátalos visualmente como SUV familiar. Modelos de referencia: Peugeot 3008, Chevrolet Tracker, Kia Sonet.</p></div></details>
+    <details data-s><summary>Automóvil <span class="tag">264 autos · 13,8% · mediana $9.190.000</span></summary><div class="body"><p>La entrada de precio del stock. Público joven o primera compra: la pieza prioriza la cuota y la simplicidad del proceso sobre el equipamiento. Modelos de referencia: Peugeot 208, MG 3, Hyundai Accent.</p></div></details>
+    <details data-s><summary>Hatchback <span class="tag">63 autos · 3,3% · mediana $8.290.000</span></summary><div class="body"><p>El precio más bajo de la vitrina, poco volumen. Mismo tratamiento que Automóvil: cuota y facilidad. Modelos de referencia: Kia Morning, Peugeot 208, MG 3.</p></div></details>
+    <details data-s><summary>Furgón <span class="tag">12 autos · 0,6% · mediana $13.490.000</span></summary><div class="body"><p>Volumen marginal. Uso comercial: la pieza habla de capacidad de carga y costo operativo, no de confort. Modelos de referencia: Peugeot Partner, Ford Transit.</p></div></details>
+  </div>
+
+  <div class="sec">
+    <h2>Qué auto héroe le toca a cada CES</h2>
+    <p class="lead">El "auto héroe" es el que protagoniza la pieza cuando el brief no fija un modelo.</p>
+    <details data-s><summary><span class="tag tq">Venta</span> Salazar Israel (SAIS)</summary><div class="body">
+      <p><b>Producto:</b> todas las marcas; carrocerías premium, SUV chinos, pickups tradicionales, SUV tradicionales.</p>
+      <p><b>Auto héroe por etapa:</b> TOFU → SUV tradicional aspiracional · MOFU → mismo mundo con foco en la prueba · BOFU → auto de catálogo listo para cotizar.</p>
+      <p><b>ADN:</b> respaldo y confianza, "que comprar un usado no dé miedo". Especialista en todas las marcas y carrocerías. Cobertura: excluir Norte.</p>
+      <p><b>Atributos AON:</b> las mejores marcas en un solo lugar · usados certificados · con garantía · inspección de 200 puntos · ficha técnica, fotos reales y estado de cada auto · financiamiento a tu medida · respaldo Salazar Israel.</p>
+    </div></details>
+    <details data-s><summary><span class="tag tq">Venta</span> Portillo</summary><div class="body">
+      <p><b>Producto:</b> SUV Toyota/Hyundai de segmento alto; concentra SUV/4x4.</p>
+      <p><b>ADN:</b> especialista en marcas reconocidas (Toyota/Hyundai), segmento más alto; "a nosotros ya nos conoces". Cobertura: excluir Norte, Costa, Concepción.</p>
+      <p><b>Atributos AON:</b> especialista en marcas reconocidas · calidad y seguridad · stock premium · financiamiento sin pie · 100% online · respaldo · parte de pago.</p>
+      <p>Copy y prohibiciones propias: consultar a Beto.</p>
+    </div></details>
+    <details data-s><summary><span class="tag tq">Venta</span> Coseche</summary><div class="body">
+      <p><b>Producto:</b> Chevrolet (SUV compacto / pickup) + el mayor stock (no solo Chevrolet).</p>
+      <p><b>ADN:</b> confianza, seguridad y conocimiento de la marca Chevrolet; el mayor stock y presencia con 40 sucursales. Financiamiento puede usar magenta.</p>
+      <p><b>Atributos AON:</b> confianza y conocimiento de Chevrolet · inspeccionados en 240 puntos · el mayor stock · 40 sucursales · financiamiento que se adapta a ti (con financiera externa) · garantía.</p>
+      <p>Copy y prohibiciones propias: consultar a Beto.</p>
+    </div></details>
+    <details data-s><summary><span class="tag tq">Venta</span> Servimaq</summary><div class="body">
+      <p><b>Producto:</b> pickups y vehículos comerciales, de varias marcas. Reactivado con foco pickup/comercial.</p>
+      <p><b>ADN:</b> durabilidad y uso de trabajo; "aguanta el trabajo".</p>
+      <p><b>Atributos AON:</b> calidad garantizada · respaldo completo · confianza en cada compra · aguanta el trabajo · gran stock · financia a 48 meses · asesoría.</p>
+      <p>Copy y prohibiciones propias: consultar a Beto.</p>
+    </div></details>
+    <details data-s><summary><span class="tag tq">Venta</span> <span class="tag vd">Compra</span> Clicar (paraguas)</summary><div class="body">
+      <p><b>Producto Venta:</b> variedad / catálogo. El auto héroe es el catálogo mismo: muchos autos, muchas marcas.</p>
+      <p><b>Producto Compra:</b> filtra a SUV y camioneta (son los autos que más conviene comprar para el stock).</p>
+      <p><b>ADN:</b> el stock agregado más grande del país, con respaldo de los otros 4 concesionarios.</p>
+      <p><b>Atributos AON Venta:</b> stock más grande (+3.000) · todas las marcas · compra, vende, financia y asegura en un lugar · respaldo de 4 concesionarios · inspeccionados · financiamiento.</p>
+      <p><b>Atributos AON Compra:</b> tasación gratis · transferencia inmediata · pago rápido y seguro · sin trámites engorrosos. En Compra no prometer montos.</p>
+      <p>Copy y prohibiciones propias: consultar a Beto.</p>
+    </div></details>
+  </div>
+</section>
+
+<!-- ================= TAB 4 ================= -->
+<section class="panel" id="t4" data-tabname="4 · A quién le hablamos">
+  <h2>A quién le hablamos</h2>
+  <p class="lead">Cada pieza existe para responder un miedo o derribar una objeción. Si no hace ninguna de las dos, es decoración.</p>
+
+  <div class="sec">
+    <h2>Los 4 miedos del comprador de usado</h2>
+    <p class="small">En orden de peso. El primero manda sobre todo lo demás.</p>
+    <div class="fears">
+      <div class="fear dom" data-s><div class="num">1</div><div><h3>Que el auto esté con problemas o que sea una estafa</h3><p>Es el miedo dominante y manda toda la comunicación. Por eso los atributos AON son inspección, garantía, fotos reales, ficha técnica, respaldo. En la pieza: auto completo, limpio, bien iluminado; nada que parezca remate ni "oferta rara". Si el cliente duda de la seriedad, el precio no importa.</p></div></div>
+      <div class="fear" data-s><div class="num">2</div><div><h3>El precio: si está pagando de más</h3><p>Quiere referencias para comparar. En la pieza: precio claro en formato chileno, sin asteriscos escondidos; "compara con confianza" como mensaje MOFU.</p></div></div>
+      <div class="fear" data-s><div class="num">3</div><div><h3>El financiamiento: si lo van a aprobar</h3><p>Teme que lo rechacen o que el pie sea inalcanzable. En la pieza: "financiamiento a tu medida", simulación de cuota, color magenta de Financiamiento. Ojo con Coseche: nunca "crédito directo" ni "sin pie".</p></div></div>
+      <div class="fear" data-s><div class="num">4</div><div><h3>La burocracia: transferencia, papeles, tiempo</h3><p>Teme perder días en trámites. En la pieza: "cotiza online en minutos", "100% online", "transferencia inmediata" (este último solo en Compra Clicar).</p></div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>Objeciones por segmento</h2>
+    <p class="lead">Cada segmento tiene una objeción principal que la pieza debe derribar. Abre cada uno.</p>
+    <details data-s><summary>SUV familiar</summary><div class="body">
+      <p><b>Objeción:</b> ¿Está bien mecánicamente?</p>
+      <p><b>Qué muestra la pieza:</b> el auto completo y en buen estado, con atributos de inspección y garantía visibles. Versión B de Meta: familia en situación cotidiana (colegio, supermercado, viaje corto). Modelos frecuentes en stock: MG ZS, Peugeot 3008, Toyota RAV4.</p>
+    </div></details>
+    <details data-s><summary>Camioneta de trabajo</summary><div class="body">
+      <p><b>Objeción:</b> ¿Aguanta la pega? ¿Cuántos km?</p>
+      <p><b>Qué muestra la pieza:</b> el auto en contexto de trabajo real (obra, campo, carga), no en showroom. Kilometraje y revisión como argumento, no escondidos. Ford Ranger es la pickup con más stock. CES natural: Servimaq ("aguanta el trabajo") y SAIS (pickups tradicionales).</p>
+    </div></details>
+    <details data-s><summary>City car / primer auto</summary><div class="body">
+      <p><b>Objeción:</b> ¿Conviene usado o nuevo?</p>
+      <p><b>Qué muestra la pieza:</b> precio y cuota accesibles, auto que se ve nuevo ("Semi Nuevos"), simplicidad del proceso. Público joven o primera compra: Coseche (primera compra C2-C3) es el CES natural.</p>
+    </div></details>
+    <details data-s><summary>SUV premium</summary><div class="body">
+      <p><b>Objeción:</b> ¿Vale pagar más por un usado premium?</p>
+      <p><b>Qué muestra la pieza:</b> estética limpia y sobria, sin saturar de ofertas. Marca reconocida y respaldo. Portillo (Toyota/Hyundai segmento alto) y la línea "Usados Premium" de SAIS y Portillo (ver paleta Premium en pestaña 6).</p>
+    </div></details>
+    <details data-s><summary>Marcas chinas (todas)</summary><div class="body">
+      <p><b>No es un segmento aparte: son entre el 17% y el 25% de cada categoría.</b></p>
+      <p><b>Objeción:</b> ¿Se deprecia? ¿Hay repuestos?</p>
+      <p><b>Qué muestra la pieza:</b> garantía, respaldo del concesionario y red de sucursales como argumento; el auto se presenta igual de serio que uno tradicional. MG, Chery, JAC, Haval, Great Wall, Changan, Geely.</p>
+    </div></details>
+    <div class="note" data-s><b>Todas las objeciones pesan igual.</b> Las piezas del mes se reparten entre los segmentos, no se concentran en uno. Si el brief no dice el segmento, la categoría del auto te lo indica: un SUV es familiar, una camioneta es de trabajo, un automóvil es primera compra.</div>
+  </div>
+</section>
+
+<!-- ================= TAB 5 ================= -->
+<section class="panel" id="t5" data-tabname="5 · Canales y soportes">
+  <h2>Canales y soportes</h2>
+  <p class="lead">Filtra por canal o etapa, ordena por columna.</p>
+  <div class="tools">
+    <input id="chq" type="search" placeholder="Filtrar: Meta, BOFU, 9:16, video, 1200×628…" aria-label="Filtrar canales">
+    <select id="chcanal" aria-label="Canal"><option value="">Todos los canales</option><option>Meta</option><option>Google PMax</option><option>Orgánico</option><option>Web</option><option>Insider</option><option>WhatsApp</option></select>
+    <span class="count" id="chcount"></span>
+  </div>
+  <div class="tw"><table id="chan">
+    <thead><tr>
+      <th class="sort" data-k="0">Canal</th><th class="sort" data-k="1">Etapa</th><th class="sort" data-k="2">Tipo de campaña</th><th class="sort" data-k="3">Formato</th><th class="sort" data-k="4">Dimensión</th><th class="sort" data-k="5">Nº versiones</th>
+    </tr></thead>
+    <tbody>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Imagen 1:1</td><td>1200×1200</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Imagen 1.91:1</td><td>1200×628</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Story/Reels 9:16</td><td>1080×1920</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Video 16:9</td><td>1920×1080</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Video 1:1</td><td>1200×1200</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>TOFU / MOFU</td><td>WhatsApp · Leads</td><td>Video Reels 9:16</td><td>1080×1920</td><td>1</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Imagen 1:1</td><td>1200×1200</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Imagen 1.91:1</td><td>1200×628</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Story/Reels 9:16</td><td>1080×1920</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Video 16:9</td><td>1920×1080</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Video 1:1</td><td>1200×1200</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Meta</td><td>BOFU</td><td>WhatsApp · Leads · Conversiones · Catálogo</td><td>Video Reels 9:16</td><td>1080×1920</td><td>2 (A auto / B personas)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Imagen 1.91:1 (hasta 20 imágenes en total)</td><td>1200×628</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Imagen 1:1</td><td>1200×1200</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Imagen 4:5</td><td>960×1200</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Video 1:1 (prioritario)</td><td>1200×1200</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Video horizontal 1920×1080</td><td>1920×1080</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Google PMax</td><td>BOFU</td><td>Conversiones</td><td>Video 9:16</td><td>1080×1920</td><td>2 (sin texto / con texto)</td></tr>
+      <tr data-s><td>Orgánico</td><td>—</td><td>Instagram · TikTok · YouTube Shorts (solo Clicar, SAIS, Portillo)</td><td>Todo vertical 9:16</td><td>1080×1920</td><td>1</td></tr>
+      <tr data-s><td>Web</td><td>—</td><td>Banners y componentes vía Contentful</td><td>Según componente</td><td>Consultar a Beto</td><td>1</td></tr>
+      <tr data-s><td>Insider</td><td>—</td><td>Mail · web push · popup · slider</td><td>Según plantilla Insider</td><td>Consultar a Beto</td><td>1</td></tr>
+      <tr data-s><td>WhatsApp</td><td>—</td><td>Paula IA (asistente IA)</td><td>Imagen/mensaje de bienvenida</td><td>Consultar a Beto</td><td>1</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card az" data-s>
+      <span class="tag">Versiones</span>
+      <h3>BOFU → 2 versiones. TOFU y MOFU → 1. Web / RRSS / FF.VV. → siempre 1.</h3>
+      <p><b>Meta BOFU:</b> <b>Versión A</b> solo el auto en contexto de ciudad (composición real) · <b>Versión B</b> con personas/familias en ciudad, en situaciones cotidianas. Headline y CTA <b>muy distintos</b> entre A y B; el <b>gancho comercial es el mismo, verbatim, en ambas.</b></p>
+      <p><b>Google PMax BOFU:</b> una versión <b>sin texto</b> (Google agrega el texto) y una <b>con texto</b> (headline + gancho + CTA optimizado). La lógica A/B auto-vs-personas es <b>solo de Meta.</b></p>
+    </div>
+    <div class="card tq" data-s>
+      <span class="tag tq">Reglas de Meta</span>
+      <h3>Zona segura y texto</h3>
+      <p><b>Story/Reels:</b> texto entre y=250 e y=1670 (lienzo 1080×1920).</p>
+      <p><b>Texto en imagen:</b> ≤20% del área y ≤125 caracteres.</p>
+      <p><b>Regla general:</b> en toda campaña se producen creativos para Meta y para Google, en gráfica estática y en video. Logos PMax se manejan aparte; no se piden en los briefs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TAB 6 ================= -->
+<section class="panel" id="t6" data-tabname="6 · Reglas duras + Marca">
+  <h2>Las reglas duras</h2>
+  <p class="lead">Cada regla con su razón. Una regla sin su razón se rompe en la primera urgencia.</p>
+  <div class="rules">
+    <div class="rule" data-s><span class="rn">REGLA 01</span><span class="rt">El KV troncal del mes es intocable.</span><span>Baja cada mes desde Nuevos ya aprobado. Nos colgamos de él; nunca competimos con él. El concepto es uno.</span><span class="why"><b>Por qué:</b> el cliente ve una sola marca en la calle. Dos conceptos el mismo mes se anulan entre sí y gerencia ya aprobó uno.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 02</span><span class="rt">Techo real: ~4 piezas por semana en todo el holding.</span><span>No se planifica contenido independiente por canal: se cae en la primera semana.</span><span class="why"><b>Por qué:</b> son 5 CES y 6 canales con un equipo chico. Un plan que exige más de 4 piezas semanales se abandona y queda peor que no tener plan.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 03</span><span class="rt">Todo se graba vertical.</span><span>Una grabación en sucursal alimenta Reel + TikTok + Short. 4 grabaciones rinden como 12 publicaciones.</span><span class="why"><b>Por qué:</b> los 3 canales orgánicos son 9:16. Grabar horizontal obliga a regrabar o a recortar mal.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 04</span><span class="rt">Cada CES tiene personalidad y público propio.</span><span>Ya no hay una sola voz del holding. Mismo auto, distinto tono.</span><span class="why"><b>Por qué:</b> SAIS vende respaldo, Portillo vende marca reconocida, Coseche vende Chevrolet y sucursales, Servimaq vende trabajo, Clicar vende catálogo. Si suenan igual, el cliente no sabe a cuál ir.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 05</span><span class="rt">Siempre la palabra "USADOS" en la creatividad.</span><span>Si no se usa "Auto Usado", va con el concesionario: "Salazar Israel Usados", "Portillo Usados", "Coseche Usados", "Servimaq Usados".</span><span class="why"><b>Por qué:</b> cada CES también vende nuevos. Sin la palabra, el cliente llega preguntando por un auto nuevo y el lead se pierde.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 06</span><span class="rt">Terminología intransable.</span><span>"Autos" (NUNCA "Vehículos") · "Semi Nuevos" (NUNCA "casi nuevos").</span><span class="why"><b>Por qué:</b> es como habla el cliente chileno y como busca en Google. "Vehículos" suena a institución; "casi nuevos" suena a excusa.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 07</span><span class="rt">El gancho comercial va verbatim.</span><span>No se reescribe ni se "mejora". Headline y CTA sí se modelan según etapa.</span><span class="why"><b>Por qué:</b> el gancho lo aprobó comercial y tiene respaldo legal. Cambiar una palabra ("hasta 48 cuotas" → "48 cuotas") puede ser publicidad engañosa.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 08</span><span class="rt">Español chileno profesional, sin slang.</span><span>Cercano pero correcto. Nada de "bacán", "cachái", "al toque" en pieza.</span><span class="why"><b>Por qué:</b> el cliente está decidiendo una compra de millones. El tono informal le baja la seriedad justo donde más la necesita (miedo nº1).</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 09</span><span class="rt">Paleta por área (Clicar).</span><span>Venta turquesa <span class="sw" style="background:#12d1c1"></span><code>#12d1c1</code> · Compra/Tasación verde <span class="sw" style="background:#6ae016"></span><code>#6ae016</code> · Financiamiento magenta <span class="sw" style="background:#de5bed"></span><code>#de5bed</code>. Todas sobre azul base <span class="sw" style="background:#323ba7"></span><code>#323ba7</code>. Sumar solo <b>1 color complementario</b> y máximo <b>2 elementos</b> por composición.</span><span class="why"><b>Por qué:</b> el color le dice al cliente en un segundo si le hablan de comprar, vender o financiar. Mezclar áreas confunde el mensaje. Para SAIS y Portillo, mira su paleta propia más abajo.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 10</span><span class="rt">Tipografías: Mont (titulares) · Gotham (texto).</span><span>Sustituto Montserrat si no están instaladas, respaldo Arial. Portillo usa FF Good Pro (ver Marca por CES).</span><span class="why"><b>Por qué:</b> la tipografía es lo que hace que una pieza "se vea de la marca" aunque cambie la foto. Mezclar fuentes rompe la familia visual.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 11</span><span class="rt">Logo: no deformar, no recolorear, no espejar, respetar área de seguridad.</span><span>Usa siempre el archivo original del Brandbook de cada CES; versiones horizontal y vertical, sobre fondo azul o blanco.</span><span class="why"><b>Por qué:</b> el logo es el activo más caro de cada CES. Una deformación se replica en 5 marcas y en todas las sucursales.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 12</span><span class="rt">Legal corto siempre.</span><span><code>*Términos y condiciones en [dominio del concesionario]</code>. La ruta exacta de cada CES la indica el brief.</span><span class="why"><b>Por qué:</b> toda promesa comercial necesita respaldo legal visible. Sin legal, la pieza no puede publicarse.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 13</span><span class="rt">Claims que NO se publican sin validación comercial.</span><span>Puntos de inspección, garantía, cobertura mecánica, "certificados". El número de puntos se localiza por CES: <b>Salazar Israel 200 · Coseche 240</b>. Para los demás, <b>el número lo da el brief: nunca se usa 200 como genérico.</b></span><span class="why"><b>Por qué:</b> si la pieza dice 200 puntos y la sucursal hace 240 (o 120), es publicidad engañosa y el cliente llega a reclamar.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 14</span><span class="rt">Coseche: NO usar "crédito directo", "financiamiento propio" ni "sin pie".</span><span>Su financiamiento es con financiera externa. Usa "financiamiento que se adapta a ti".</span><span class="why"><b>Por qué:</b> Coseche no otorga crédito; prometerlo es falso y genera leads que no pueden cerrarse.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 15</span><span class="rt">Números en formato chileno.</span><span><code>$1.250.000</code>: punto para miles, coma para decimales. Cuotas como "hasta 48 cuotas".</span><span class="why"><b>Por qué:</b> "$1,250,000" se lee raro en Chile y resta credibilidad justo en el precio (miedo nº2).</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 16</span><span class="rt">Qué evitar en Salazar Israel.</span><span>El año 1982 · "Revisado antes de venderse" · "Tu SUV inspeccionada antes de que la manejes" · estética de remate.</span><span class="why"><b>Por qué:</b> SAIS vende respaldo y confianza. La estética de remate y las frases que suenan a "lo revisamos recién" contradicen ese ADN.</span></div>
+    <div class="rule" data-s><span class="rn">REGLA 17</span><span class="rt">Fotografía lifestyle, el auto siempre protagonista y completo.</span><span>Fotos estilo lifestyle, el auto debe verse completamente.</span><span class="why"><b>Por qué:</b> el cliente quiere ver el auto que va a comprar (miedo nº1). Un auto cortado o escondido tras personas genera desconfianza.</span></div>
+  </div>
+
+  <div class="sec" id="marca">
+    <h2>Marca · colores y tipografías por CES</h2>
+    <div class="note" data-s><b>Ante cualquier duda de marca, manda el Brandbook oficial del CES.</b> Para Clicar, la Guía rápida que lo resume.</div>
+    <div class="grid g3">
+      <div class="card az" data-s>
+        <span class="tag">Clicar · Guía rápida</span>
+        <h3>Paleta Clicar</h3>
+        <div class="pal">
+          <div style="background:#323ba7;color:#fff">Azul Clicar<br>#323ba7 · 661c</div>
+          <div style="background:#6ae016;color:#10290a">Verde Clicar<br>#6ae016 · 375c</div>
+          <div style="background:#12d1c1;color:#102a2a">Turquesa<br>#12d1c1 · 3252c</div>
+          <div style="background:#de5bed;color:#2a0a2a">Magenta<br>#de5bed · 252c</div>
+          <div style="background:#1484f4;color:#fff">Azul claro<br>#1484f4 · 285c</div>
+        </div>
+        <p class="small" style="margin-top:8px"><b>Tipografía:</b> Mont (titulares) · Gotham (texto). Pesos Regular / Semibold / Bold. Encabezados azul con texto blanco; alertas en magenta, no rojo.</p>
+      </div>
+      <div class="card az" data-s>
+        <span class="tag">Salazar Israel · Brandbook 2026</span>
+        <h3>Paleta SAIS Usados</h3>
+        <div class="pal">
+          <div style="background:#004c94;color:#fff">Azul principal<br>#004c94 · 2945c</div>
+          <div style="background:#fcbe01;color:#1b1f3a">Amarillo<br>#fcbe01 · 7548C</div>
+          <div style="background:#c83884;color:#fff">Magenta<br>#c83884 · 233U</div>
+          <div style="background:#0083b1;color:#fff">Process Blue<br>#0083b1</div>
+          <div style="background:#00254b;color:#fff">Usados Premium<br>#00254b · 2767c</div>
+        </div>
+        <p class="small" style="margin-top:8px"><b>Tipografía:</b> Mont Family (light / regular / bold / heavy) + complementaria <b>Gamay Wide Black</b> para titulares de impacto (diferenciador propio frente a Clicar). Cenefa con franja tricolor turquesa-magenta-amarillo. Logo horizontal y vertical, sobre azul o blanco. Línea "Usados Premium": azul marino + amarillo, tipografía espaciada.</p>
+      </div>
+      <div class="card az" data-s>
+        <span class="tag">Portillo · Brandbook 2026</span>
+        <h3>Paleta Portillo Usados</h3>
+        <div class="pal">
+          <div style="background:#0082d1;color:#fff">Azul Portillo<br>#0082d1</div>
+          <div style="background:#6bc1e9;color:#1b1f3a">Celeste<br>#6bc1e9</div>
+          <div style="background:#fda902;color:#1b1f3a">Naranjo<br>#fda902</div>
+          <div style="background:#ffffff;color:#1b1f3a;border:1px solid #ccc">Blanco<br>#FFFFFF</div>
+          <div style="background:#212c35;color:#fff">Usados Premium<br>#212c35</div>
+        </div>
+        <p class="small" style="margin-top:8px"><b>Tipografía:</b> <b>FF Good Pro</b> (Italic / Medium Italic / Bold Italic): todo en cursiva. Franja celeste-naranjo bajo la cenefa. Logo "///PORTILLO | USADOS" horizontal o apilado. Línea "Usados Premium": gris oscuro, sin color de acento.</p>
+      </div>
+      <div class="card mg" data-s>
+        <span class="tag mg">Coseche</span>
+        <h3>Paleta Coseche</h3>
+        <p>Paleta y logo oficial: consultar a Beto. Mientras tanto, usa la paleta por área de Clicar; Financiamiento puede ir en magenta.</p>
+      </div>
+      <div class="card mg" data-s>
+        <span class="tag mg">Servimaq</span>
+        <h3>Paleta Servimaq</h3>
+        <p>Paleta y logo oficial: consultar a Beto. Mientras tanto, usa la paleta por área de Clicar.</p>
+      </div>
+      <div class="card mg" data-s>
+        <span class="tag mg">KV del mes</span>
+        <h3>KV troncal vigente</h3>
+        <p>El KV troncal de este mes lo entrega Beto. Sin el KV no se parte ninguna pieza.</p>
+      </div>
+    </div>
+    <div class="note" data-s><b>Cómo conviven las paletas:</b> la regla "paleta por área" (turquesa Venta / verde Compra / magenta Financiamiento) está definida en la Guía rápida de Clicar. SAIS y Portillo tienen su propia paleta en su Brandbook y sus piezas de RRSS usan esos colores (SAIS: fondo magenta #c83884 o foto; Portillo: fondo azul #0082d1). <b>Si no estás segura de qué paleta aplica en una pieza, consultar a Beto antes de empezar.</b></div>
+  </div>
+</section>
+
+<!-- ================= TAB 7 ================= -->
+<section class="panel" id="t7" data-tabname="7 · Jefatura y aprobación">
+  <h2>Jefatura y flujo de aprobación</h2>
+  <p class="lead">Quién es quién en el equipo de Usados, cómo se aprueba una pieza y a quién le preguntas qué.</p>
+
+  <div class="sec">
+    <h2>Quién es quién · el equipo de Usados</h2>
+    <div class="tw"><table data-s>
+      <thead><tr><th>Persona</th><th>Cargo</th><th>Qué le compete a ella</th></tr></thead>
+      <tbody>
+        <tr><td><b>Iván Balaguera</b></td><td>Gerente de Usados Americar</td><td>VB final de gerencia. No se le escribe directo.</td></tr>
+        <tr><td><b>Kelvin Noriega</b></td><td>Brand Manager Usados Americar</td><td><b>Jefatura directa de la diseñadora.</b> Permisos, justificaciones, ausencias, temas administrativos y contractuales. Lleva las piezas a Iván.</td></tr>
+        <tr><td><b>Francisca Altamirano ("Pancha")</b></td><td>Brand Manager</td><td>Equipo de marca.</td></tr>
+        <tr><td><b>Paola Toledo</b></td><td>Growth Marketing</td><td>Equipo de Growth.</td></tr>
+        <tr><td><b>Roberto "Beto" Sánchez</b></td><td>Digital Marketing</td><td><b>Dirección del trabajo de diseño.</b> Brief, marca, prioridades, criterio y VB de la pieza. Recibe las entregas.</td></tr>
+        <tr><td><b>Macarena Tecas ("Maca")</b></td><td>Diseñadora (interna)</td><td><b>Apoyo técnico.</b> Archivos, plantillas, "cómo se hace acá". No es su jefatura y no recibe sus entregas.</td></tr>
+        <tr><td><b>Jael Cofré</b></td><td>Diseñadora externa, dedicada a Usados</td><td>Ella.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note" data-s><b>Dos jefaturas, dos materias distintas: no se cruzan.</b> <b>Kelvin Noriega</b> es su jefatura directa en lo <b>administrativo y contractual</b>: permisos, justificaciones, horarios, ausencias. <b>Beto Sánchez</b> dirige el <b>trabajo de diseño</b>: brief, marca, prioridades, criterio y VB de la pieza. Si un día ambos piden cosas distintas al mismo tiempo, <b>lo resuelven entre ellos dos, no ella.</b> Ella avisa que hay un cruce y sigue con lo que ya estaba haciendo hasta que le confirmen la prioridad.</div>
+  </div>
+
+  <div class="sec">
+    <h2>El flujo de aprobación · 6 pasos</h2>
+    <div class="flow" data-s>
+      <div class="fn"><b>1 · Nuevos</b>Entrega el KV del mes, ya aprobado.</div>
+      <div class="fa">→</div>
+      <div class="fn"><b>2 · Beto Sánchez</b>Arma el brief.</div>
+      <div class="fa">→</div>
+      <div class="fn me"><b>3 · Jael (tú estás acá)</b>Produces las piezas y las entregas <b>a Beto</b>.</div>
+      <div class="fa">→</div>
+      <div class="fn vb"><b>4 · Beto · VB</b>Da el VB de la pieza. Si hay ajustes, vuelve a ti.</div>
+      <div class="fa">→</div>
+      <div class="fn vb"><b>5 · Kelvin Noriega · VB</b>Brand Manager Usados. Revisa y <b>lleva la pieza a gerencia</b>.</div>
+      <div class="fa">→</div>
+      <div class="fn vb"><b>6 · Iván Balaguera · VB final</b>Gerente de Usados. VB final → publicación.</div>
+    </div>
+  </div>
+
+  <div class="grid g3">
+    <div class="card vd" data-s><h3>Entregas a Beto, no publicas nada</h3><p>Ni a Meta, ni a Contentful, ni a Insider, ni a RRSS. La pieza se entrega y alguien más la sube.</p></div>
+    <div class="card az" data-s><h3>Nada llega a gerencia sin pasar por Beto y Kelvin, en ese orden</h3><p>Aunque te lo pidan "urgente" desde una sucursal o desde comercial.</p></div>
+    <div class="card mg" data-s><h3>Solo Beto y Kelvin te piden trabajo</h3><p>Si cualquier otra persona del holding te pide una pieza directo (jefe de sucursal, comercial, otro CES), la respuesta es "pásalo por Beto o Kelvin". No es descortesía: es lo que impide que termines con 15 pedidos paralelos y ninguno priorizado.</p></div>
+  </div>
+
+  <div class="sec">
+    <div class="card vd" data-s style="border:2px solid var(--verde)">
+      <span class="tag vd">Obligación diaria</span>
+      <h3 style="font-size:1.3rem;margin-top:6px">Daily · todos los días a las 9:30</h3>
+      <p>Reunión diaria del equipo de Usados. <b>Se conecta sin excepción</b>, esté o no con entregas pendientes.</p>
+      <p>Beto te comparte el enlace de conexión el día 1.</p>
+      <p>Es donde se fijan y se reordenan las prioridades del día. Si no se conecta, trabaja sobre prioridades viejas.</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>A quién le pregunto qué</h2>
+    <div class="tw"><table data-s>
+      <thead><tr><th>Tema</th><th>A quién</th><th>Cómo</th></tr></thead>
+      <tbody>
+        <tr><td>Brief, marca, KV, formatos, prioridades, dudas de este manual</td><td><b>Beto Sánchez</b> (Digital Marketing)</td><td>Directo</td></tr>
+        <tr><td>Permisos, justificaciones, horarios, ausencias, temas contractuales</td><td><b>Kelvin Noriega</b> (Brand Manager Usados)</td><td>Directo</td></tr>
+        <tr><td>Archivos, plantillas, logos, "cómo se hace acá"</td><td><b>Macarena Tecas</b> (Diseñadora)</td><td>Directo · apoyo técnico, no jefatura</td></tr>
+        <tr><td>VB final de gerencia</td><td><b>Iván Balaguera</b> (Gerente de Usados)</td><td>Vía Kelvin. No se le escribe directo.</td></tr>
+        <tr><td>Validación de claims: inspección, garantía, cobertura, "certificados", precios y bonos</td><td>Comercial de cada CES</td><td>Vía Beto</td></tr>
+        <tr><td>Cambios mayores del sitio web, Contentful</td><td>TI del holding</td><td>Vía Beto</td></tr>
+        <tr><td>Leads: qué pasa después del clic</td><td><b>Yerko</b></td><td>Vía Beto</td></tr>
+        <tr><td>Google Ads operado por agencia</td><td><b>Metrix</b></td><td>Vía Beto</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="sec">
+    <div class="note" data-s><b>El techo de ~4 piezas semanales no es tu cuota personal.</b> Es el límite de planificación del equipo completo: el holding no planifica más de ~4 piezas por semana porque un plan más grande se abandona. El reparto concreto entre tú y Maca lo acuerdas con Beto en la primera semana. Si en algún momento el volumen pedido no te calza con el tiempo que tienes, <b>dilo antes, no después</b>: ese es el dato que Beto necesita para ordenar las prioridades.</div>
+  </div>
+</section>
+
+<!-- ================= TAB 8 ================= -->
+<section class="panel" id="t8" data-tabname="8 · Tu primera semana">
+  <h2>Tu primera semana</h2>
+  <p class="lead">Marca cada casilla cuando esté lista. El progreso se guarda en este navegador.</p>
+  <div class="count"><span id="ckdone">0</span> de <span id="cktotal">0</span> completadas</div>
+  <div class="prog"><div id="ckbar"></div></div>
+  <div class="ck" id="cklist">
+    <label data-s><input type="checkbox" id="ck01"><span>Leer este manual completo una vez (pestañas 1 a 8).</span></label>
+    <label data-s><input type="checkbox" id="ck02"><span>Pedir a Beto el <b>KV del mes</b> vigente y el brief activo.</span></label>
+    <label data-s><input type="checkbox" id="ck03"><span>Recibir los <b>Brandbooks</b>: Clicar (Guía rápida), Salazar Israel y Portillo. Para Coseche y Servimaq, consultar a Beto.</span></label>
+    <label data-s><input type="checkbox" id="ck04"><span>Instalar tipografías <b>Mont</b>, <b>Gotham</b>, <b>Gamay Wide Black</b> (SAIS) y <b>FF Good Pro</b> (Portillo). Las licencias las gestiona Beto.</span></label>
+    <label data-s><input type="checkbox" id="ck05"><span>Recibir logos oficiales de los 5 CES en vector (horizontal y vertical, versión blanca y color).</span></label>
+    <label data-s><input type="checkbox" id="ck06"><span>Pedir accesos a Beto: carpeta compartida de piezas y fotos de stock, y la herramienta de tareas y briefs.</span></label>
+    <label data-s><input type="checkbox" id="ck07"><span>Armar plantillas base en PSD con las dimensiones de la pestaña 5 (Meta 1:1, 1.91:1, 9:16; PMax 4:5) con guías de zona segura en 9:16.</span></label>
+    <label data-s><input type="checkbox" id="ck08"><span>Leer un brief real con Beto, bloque por bloque (ver "Cómo se lee un brief" abajo).</span></label>
+    <label data-s><input type="checkbox" id="ck09"><span>Acordar con Beto tu primera entrega concreta de la semana y su fecha.</span></label>
+    <label data-s><input type="checkbox" id="ck10"><span>Entregar la primera pieza con nomenclatura correcta y en PSD + PNG (o MP4).</span></label>
+    <label data-s><input type="checkbox" id="ck11"><span>Conectarse a la <b>Daily de 9:30</b> (el día 1 y todos los días).</span></label>
+    <label data-s><input type="checkbox" id="ck12"><span>Acordar con <b>Kelvin Noriega</b> los temas administrativos: horario, canal de comunicación, cómo justificar una ausencia.</span></label>
+    <label data-s><input type="checkbox" id="ck13"><span>Acordar con <b>Beto y Maca</b> el reparto de piezas y qué archivos ya existen para no rehacerlos.</span></label>
+  </div>
+
+  <div class="sec grid g2">
+    <div class="card az" data-s>
+      <span class="tag">Entrega</span>
+      <h3>Qué entregas y cómo se nombra</h3>
+      <p><b>Formato:</b> PSD editable + PNG por pieza, y MP4 para video.</p>
+      <p><b>Nomenclatura obligatoria:</b> <code>[MARCA]_[VERTICAL]_[CAMPAÑA]_[DIM]_[MES][AÑO]</code></p>
+      <p class="small">Ejemplo: <code>SAIS_VENTA_AON_1200x1200_OCT2026</code>. Para versiones A/B o sin/con texto, el sufijo lo indica el brief.</p>
+    </div>
+    <div class="card az" data-s>
+      <span class="tag">Lectura</span>
+      <h3>Cómo se lee un brief</h3>
+      <p><b>1 · Contexto de la campaña:</b> qué es, qué comunica, qué se mantiene y qué cambia. No trae copy final.</p>
+      <p><b>2 · Headline + Gancho comercial + CTA:</b> el gancho va verbatim; headline y CTA según etapa (TOFU / MOFU / BOFU).</p>
+      <p><b>3 · Vocabulario:</b> concesionario, vertical, plataforma, etapa, tipo de campaña, guardarraíles.</p>
+      <p><b>4 · Sugerencias de diseño:</b> imagen, proporciones, peso tipográfico, composición, siempre con marcas y modelos reales del CES.</p>
+      <p><b>5 · Mejora continua:</b> peso tipográfico, jerarquía visual y % de elementos destacados para iterar.</p>
+      <p><b>6 · Legal corto</b> con el dominio del concesionario.</p>
+      <p class="small">Si un campo del brief está incompleto, se lo pides a Beto. No se inventa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TAB 9 · DECK ================= -->
+<section class="panel" id="t9" data-tabname="9 · Deck Día 1">
+  <h2>Deck Día 1 · sesión de 1 hora</h2>
+  <p class="lead">No es un resumen del manual: es el guion de la conversación. Flechas ← → o espacio para avanzar. Al pie de cada lámina, la pregunta que Beto le hace a ella en ese punto.</p>
+  <div class="deckbar">
+    <button class="btn" id="fsBtn" type="button">Pantalla completa</button>
+    <button class="btn sec2" id="prevBtn" type="button">← Anterior</button>
+    <button class="btn sec2" id="nextBtn" type="button">Siguiente →</button>
+    <span class="small">Esc sale de pantalla completa.</span>
+  </div>
+  <div class="deck" id="deck" tabindex="0" aria-label="Deck Día 1">
+    <div class="slide on" data-s>
+      <div><span class="eb">Lámina 1 · Bienvenida</span><h2>Bienvenida al equipo de Usados</h2></div>
+      <div class="bd">
+        <p>Americar es el holding automotriz dueño de los <b>5 concesionarios más grandes de Chile</b>. Nosotros somos la parte que vende <b>autos usados</b> en esos 5.</p>
+        <div class="big">1.920</div>
+        <p>autos usados publicados hoy, de 45 marcas. Cada uno necesita que alguien lo muestre bien. Ese alguien eres tú.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> ¿Qué sabes de Americar y de cómo se compra un auto usado en Chile? ¿Has comprado uno?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 2 · Los 5 CES</span><h2>5 concesionarios, 1 equipo, solo Usados</h2></div>
+      <div class="bd">
+        <div class="cols">
+          <div class="box"><b>Clicar</b><br>Solo usados. Vende y compra.</div>
+          <div class="box"><b>Salazar Israel</b><br>Nuevos + usados. Respaldo.</div>
+          <div class="box"><b>Portillo</b><br>Nuevos + usados. Toyota/Hyundai.</div>
+          <div class="box"><b>Coseche</b><br>Nuevos + usados. Chevrolet.</div>
+          <div class="box"><b>Servimaq</b><br>Nuevos + usados. Pickups, Sur.</div>
+        </div>
+        <ul>
+          <li>Tú trabajas <b>solo en Usados</b>. Nuevos es otro equipo y otro KV.</li>
+          <li><b>Venta (B2C)</b> en los 5. <b>Compra/Tasación (C2B)</b> solo en Clicar.</li>
+          <li>Pauta: los 5. Orgánico: solo Clicar, SAIS y Portillo.</li>
+          <li><b>Daily todos los días a las 9:30. Sin excepción.</b></li>
+        </ul>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Si te llega una pieza de un Toyota nuevo con logo Portillo, ¿qué haces con ella?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 3 · Diccionario mínimo</span><h2>8 siglas para sobrevivir la primera reunión</h2></div>
+      <div class="bd">
+        <div class="cols">
+          <div class="box"><b>CES</b> concesionario</div>
+          <div class="box"><b>KV</b> key visual del mes</div>
+          <div class="box"><b>TOFU / MOFU / BOFU</b> atraer / comparar / cotizar</div>
+          <div class="box"><b>AON</b> campaña permanente de atributos</div>
+          <div class="box"><b>Táctica</b> campaña con gancho comercial</div>
+          <div class="box"><b>Verbatim</b> tal cual, sin tocar</div>
+          <div class="box"><b>Zona segura</b> y=250 a y=1670 en 9:16</div>
+          <div class="box"><b>Lead</b> persona que dejó sus datos</div>
+        </div>
+        <p>El resto está en la pestaña 2 del manual, con buscador.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Con tus palabras, ¿cuál es la diferencia entre una pieza AON y una Táctica?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 4 · La más importante</span><h2>Los 4 miedos del comprador de usado</h2></div>
+      <div class="bd">
+        <ul>
+          <li><b>1 · "¿Y si el auto viene con problemas o es una estafa?"</b> El miedo dominante. Manda todo.</li>
+          <li><b>2 · "¿Estoy pagando de más?"</b></li>
+          <li><b>3 · "¿Me van a aprobar el financiamiento?"</b></li>
+          <li><b>4 · "¿Cuánto trámite y cuánto tiempo?"</b></li>
+        </ul>
+        <p>Cada pieza responde al menos a uno. Si no responde a ninguno, es decoración.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Piensa en una pieza de auto usado que hayas visto en Instagram. ¿A cuál de los 4 miedos respondía? ¿A ninguno?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 5 · Segmentos</span><h2>Cada segmento tiene su objeción</h2></div>
+      <div class="bd">
+        <div class="cols">
+          <div class="box"><b>SUV familiar</b><br>¿Está bien mecánicamente?</div>
+          <div class="box"><b>Camioneta de trabajo</b><br>¿Aguanta la pega? ¿Cuántos km?</div>
+          <div class="box"><b>City car / primer auto</b><br>¿Conviene usado o nuevo?</div>
+          <div class="box"><b>SUV premium</b><br>¿Vale pagar más por un usado premium?</div>
+          <div class="box"><b>Marcas chinas</b><br>¿Se deprecia? ¿Hay repuestos?</div>
+        </div>
+        <p><b>La categoría del auto te dice el segmento:</b> SUV es familiar, camioneta es trabajo, automóvil es primera compra.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Para una Ford Ranger usada en Servimaq, ¿qué foto, qué frase y qué dato pondrías para derribar la objeción?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 6 · Stock</span><h2>El stock es uno y es de todos</h2></div>
+      <div class="bd">
+        <p>Los autos se publican en los 5 sitios desde un stock nacional compartido.</p>
+        <p class="big" style="font-size:clamp(1.3rem,3vw,2rem)">Una pieza → varias marcas</p>
+        <p>Se cambia el <b>logo</b>, el <b>dominio</b> y el <b>atributo</b>. No la foto. Diseña en capas desde el día 1.</p>
+        <p><b>La mitad del stock son SUV</b> (986 de 1.920). Camionetas y station wagon son un 15% cada una. Si el brief no fija el modelo, parte por el más frecuente de su categoría: MG ZS, Peugeot 3008 o Toyota RAV4 en SUV; Ford Ranger en camioneta.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> ¿Cómo armarías el PSD para que pasar una pieza de SAIS a Portillo tome 5 minutos y no 50?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 7 · Canales</span><h2>Dónde vive cada pieza</h2></div>
+      <div class="bd">
+        <div class="cols">
+          <div class="box"><b>Meta</b><br>Todo el embudo. 1:1, 1.91:1, 9:16. BOFU en 2 versiones (A auto / B personas).</div>
+          <div class="box"><b>Google PMax</b><br>Solo BOFU. 1.91:1, 1:1, 4:5. 2 versiones (sin texto / con texto).</div>
+          <div class="box"><b>Orgánico</b><br>IG, TikTok, Shorts. Todo vertical 9:16. Solo 3 CES.</div>
+          <div class="box"><b>Web · Insider · WhatsApp</b><br>Banners (Contentful), mail/popup (Insider), Paula IA.</div>
+        </div>
+        <p>El detalle con todas las dimensiones está en la pestaña 5, filtrable.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Una campaña BOFU para Meta y PMax, en imagen y video: ¿cuántos archivos salen? Cuéntalos conmigo.</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 8 · Reglas</span><h2>Las 5 reglas que no se rompen</h2></div>
+      <div class="bd">
+        <ul>
+          <li><b>El KV del mes es intocable.</b> Nos colgamos de él, no competimos con él.</li>
+          <li><b>~4 piezas por semana en todo el holding.</b> No más. Un plan que exige más se cae.</li>
+          <li><b>Todo se graba vertical.</b> 1 grabación = Reel + TikTok + Short.</li>
+          <li><b>Terminología:</b> "Autos", nunca "Vehículos". "Semi Nuevos", nunca "casi nuevos". Siempre "USADOS".</li>
+          <li><b>El gancho comercial va verbatim.</b> Headline y CTA sí se adaptan.</li>
+        </ul>
+        <p>Las demás reglas, con su razón, están en la pestaña 6.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> ¿Cuál de estas 5 crees que vas a tener más ganas de romper? ¿Por qué?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 9 · Aprobación</span><h2>Tú → Beto → Kelvin → Iván</h2></div>
+      <div class="bd">
+        <p class="big" style="font-size:clamp(1.1rem,2.4vw,1.8rem)">Nuevos (KV) → Beto (brief) → Tú (pieza) → Beto (VB) → Kelvin Noriega (lleva a gerencia) → Iván Balaguera (VB final) → publicación</p>
+        <ul>
+          <li><b>Entregas a Beto.</b> No publicas ni subes nada directo.</li>
+          <li><b>Kelvin Noriega es tu jefatura directa</b> para permisos y justificaciones.</li>
+          <li><b>Beto dirige tu trabajo de diseño</b>: brief, marca, prioridades, VB de la pieza.</li>
+          <li><b>Maca te apoya técnicamente</b>, no es tu jefatura y no recibe tus entregas.</li>
+          <li><b>Solo Beto y Kelvin te piden trabajo.</b> Cualquier otro pedido se deriva a ellos.</li>
+        </ul>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> Si un jefe de sucursal te escribe directo pidiendo "una piecita urgente para hoy", ¿qué le respondes?</div>
+    </div>
+    <div class="slide" data-s>
+      <div><span class="eb">Lámina 10 · Cierre</span><h2>Tu primera semana</h2></div>
+      <div class="bd">
+        <ul>
+          <li>Leer el manual completo (pestañas 1 a 8).</li>
+          <li>Pedir KV del mes, Brandbooks, logos en vector, tipografías.</li>
+          <li>Armar plantillas PSD con las dimensiones y la zona segura.</li>
+          <li>Leer un brief real con Beto, bloque por bloque.</li>
+          <li>Primera entrega: se define hoy con Beto.</li>
+          <li>Conectarse a la Daily de 9:30 desde el día 1.</li>
+          <li>Acordar con Beto y Maca el reparto de piezas entre las dos.</li>
+        </ul>
+        <p>Entrega: PSD + PNG (MP4 en video). Nombre: <b>[MARCA]_[VERTICAL]_[CAMPAÑA]_[DIM]_[MES][AÑO]</b>.</p>
+        <p>Todo esto queda en este manual. Cuando tengas una duda en la semana 3, abre el buscador de arriba y escribe la palabra.</p>
+      </div>
+      <div class="q"><b>Pregunta de Beto:</b> ¿Qué es lo primero que quieres diseñar? Acordemos juntos la primera entrega y su fecha.</div>
+    </div>
+    <div class="dnav"><button type="button" id="dprev" aria-label="Anterior">‹</button><span id="dcount">1 / 10</span><button type="button" id="dnext" aria-label="Siguiente">›</button></div>
+  </div>
+</section>
+
+</div>
+
+<script>
+(function(){
+  const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+  const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+  // ---- Tabs
+  const tabs=$$('#tabs button'), panels=$$('.panel');
+  function show(id,push){
+    tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===id));
+    panels.forEach(p=>p.classList.toggle('on',p.id===id));
+    try{localStorage.setItem('kit-tab',id)}catch(e){}
+    if(push){try{history.replaceState(null,'','#'+id)}catch(e){}}
+    window.scrollTo({top:0});
+  }
+  tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.tab,true)));
+  let start='t1';
+  if(/^#t[1-9]$/.test(location.hash)) start=location.hash.slice(1);
+  else{try{const s=localStorage.getItem('kit-tab');if(s&&$('#'+s))start=s}catch(e){}}
+  show(start,false);
+
+  // ---- Bars (built from data)
+  function bars(el,data,cls){
+    const max=Math.max(...data.map(d=>d[1]));
+    el.innerHTML=data.map(d=>`<div class="bar ${cls||''}"><span class="lab">${d[0]}</span><div class="tr"><div class="fl" style="width:${(d[1]/max*100).toFixed(1)}%"></div></div><span class="v">${d[1]}</span></div>`).join('');
+  }
+  bars($('#catBars'),[['SUV',986],['Camioneta',304],['Station Wagon',289],['Automóvil',264],['Hatchback',63],['Furgón',12]]);
+
+  // ---- Dictionary filter
+  const dq=$('#dicq'), drows=$$('#dict tbody tr');
+  function dfilter(){const q=norm(dq.value.trim());let n=0;drows.forEach(r=>{const ok=!q||norm(r.textContent).includes(q);r.hidden=!ok;if(ok)n++});$('#diccount').textContent=`${n} de ${drows.length} términos`}
+  dq.addEventListener('input',dfilter);dfilter();
+
+  // ---- Channels filter + sort
+  const cq=$('#chq'), cc=$('#chcanal'), ctb=$('#chan tbody'), crows=$$('#chan tbody tr');
+  function cfilter(){const q=norm(cq.value.trim()),c=cc.value;let n=0;crows.forEach(r=>{const ok=(!q||norm(r.textContent).includes(q))&&(!c||r.cells[0].textContent===c);r.hidden=!ok;if(ok)n++});$('#chcount').textContent=`${n} de ${crows.length} soportes`}
+  cq.addEventListener('input',cfilter);cc.addEventListener('change',cfilter);cfilter();
+  let sortK=-1,sortDir=1;
+  $$('#chan th.sort').forEach(th=>th.addEventListener('click',()=>{
+    const k=+th.dataset.k; sortDir=(sortK===k)?-sortDir:1; sortK=k;
+    $$('#chan th.sort').forEach(t=>t.classList.remove('asc','desc')); th.classList.add(sortDir>0?'asc':'desc');
+    const rows=[...ctb.rows].sort((a,b)=>{const x=a.cells[k].textContent.trim(),y=b.cells[k].textContent.trim();const nx=parseFloat(x),ny=parseFloat(y);if(!isNaN(nx)&&!isNaN(ny)&&k===5)return (nx-ny)*sortDir;return x.localeCompare(y,'es',{numeric:true})*sortDir});
+    rows.forEach(r=>ctb.appendChild(r));
+  }));
+
+  // ---- Checklist
+  const cks=$$('#cklist input');$('#cktotal').textContent=cks.length;
+  function ckupd(){const d=cks.filter(c=>c.checked).length;$('#ckdone').textContent=d;$('#ckbar').style.width=(d/cks.length*100)+'%';try{localStorage.setItem('kit-ck',JSON.stringify(cks.map(c=>c.checked)))}catch(e){}}
+  try{const s=JSON.parse(localStorage.getItem('kit-ck')||'[]');cks.forEach((c,i)=>c.checked=!!s[i])}catch(e){}
+  cks.forEach(c=>c.addEventListener('change',ckupd));ckupd();
+
+  // ---- Global search
+  const tabName=el=>{const p=el.closest('.panel');return p?p.dataset.tabname:'—'};
+  const gs=$('#gsearch'), gr=$('#gres');
+  const items=$$('[data-s]').map(el=>({el,txt:norm(el.textContent.replace(/\s+/g,' ')),tab:tabName(el),tabId:(el.closest('.panel')||{}).id}));
+  function snippet(el,q){const t=el.textContent.replace(/\s+/g,' ').trim();const i=norm(t).indexOf(q);const s=Math.max(0,i-50);return (s>0?'…':'')+t.slice(s,i+90)+(i+90<t.length?'…':'')}
+  function gsearch(){
+    const q=norm(gs.value.trim());
+    if(q.length<2){gr.hidden=true;gr.innerHTML='';return}
+    const hits=items.filter(it=>it.txt.includes(q)).slice(0,30);
+    gr.innerHTML=hits.length?hits.map((h,i)=>`<button type="button" data-i="${items.indexOf(h)}"><span class="t">${h.tab}</span>${snippet(h.el,q)}</button>`).join(''):`<div class="none">Sin resultados para "${gs.value}". Prueba con una palabra más corta o pregúntale a Beto.</div>`;
+    gr.hidden=false;
+  }
+  gs.addEventListener('input',gsearch);
+  gs.addEventListener('focus',gsearch);
+  document.addEventListener('click',e=>{if(!e.target.closest('.search'))gr.hidden=true});
+  gr.addEventListener('click',e=>{
+    const b=e.target.closest('button');if(!b)return;const it=items[+b.dataset.i];gr.hidden=true;
+    show(it.tabId,true);
+    const d=it.el.closest('details');if(d)d.open=true;
+    const tr=it.el.closest('tr');if(tr)tr.hidden=false;
+    if(it.tabId==='t9'){const sl=it.el.closest('.slide');if(sl)go(slides.indexOf(sl))}
+    setTimeout(()=>{it.el.scrollIntoView({block:'center'});it.el.classList.add('hl');setTimeout(()=>it.el.classList.remove('hl'),2500)},60);
+  });
+
+  // ---- Deck
+  const deck=$('#deck'), slides=$$('#deck .slide');let cur=0;
+  function go(n){cur=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('on',i===cur));$('#dcount').textContent=`${cur+1} / ${slides.length}`}
+  $('#dnext').onclick=$('#nextBtn').onclick=()=>go(cur+1);
+  $('#dprev').onclick=$('#prevBtn').onclick=()=>go(cur-1);
+  document.addEventListener('keydown',e=>{
+    if(e.target.matches('input,select,textarea'))return;
+    const deckVisible=$('#t9').classList.contains('on')||deck.classList.contains('fs');
+    if(!deckVisible)return;
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(cur+1)}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1)}
+    else if(e.key==='Home'){go(0)}else if(e.key==='End'){go(slides.length-1)}
+    else if(e.key==='Escape'&&deck.classList.contains('fs')){leaveFs()}
+  });
+  function leaveFs(){deck.classList.remove('fs');if(document.fullscreenElement){document.exitFullscreen().catch(()=>{})}}
+  $('#fsBtn').addEventListener('click',()=>{
+    deck.classList.add('fs');deck.focus();
+    if(deck.requestFullscreen){deck.requestFullscreen().catch(()=>{})}
+  });
+  document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)deck.classList.remove('fs')});
+  deck.addEventListener('dblclick',()=>{if(deck.classList.contains('fs'))leaveFs()});
+})();
+</script>
+
+</body></html>
